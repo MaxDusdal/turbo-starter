@@ -9,10 +9,11 @@
     "check-types": "turbo run check-types",
     "clean": "turbo run clean",
     "fresh": "pnpm clean && pnpm install && pnpm build",
-    "prisma:generate": "prisma generate",
-    "prisma:migrate": "prisma migrate dev"
+    "prisma:generate": "dotenv -e ./.env -- prisma generate",
+    "prisma:migrate": "dotenv -e ./.env -- prisma migrate dev"
   },
   "devDependencies": {
+    "dotenv-cli": "^7.4.4",
     "prettier": "^3.6.2",
     "turbo": "^2.5.6",
     "typescript": "5.9.2"
