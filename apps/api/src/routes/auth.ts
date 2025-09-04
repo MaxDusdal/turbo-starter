@@ -8,7 +8,7 @@ const authRoutes: FastifyPluginAsync = async (fastify): Promise<void> => {
         url: '/api/auth/*',
         handler: async (request, reply) => {
             try {
-                console.log("[AUTH] Incoming request:", request.method, request.url);
+                console.log('[AUTH] Incoming request:', request.method, request.url);
                 const url = new URL(request.url, `http://${request.headers.host}`);
 
                 // Build Headers object
