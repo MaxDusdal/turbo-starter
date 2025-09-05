@@ -2,5 +2,5 @@ import { PrismaClient } from '@prisma/client'
 
 export const prisma = new PrismaClient()
 
-// Export all types from the types module
-export * from './types'
+// Re-export all types (NodeNext requires .js extension in source import specifiers)
+export * from './types.js'

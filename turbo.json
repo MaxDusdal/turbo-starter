@@ -13,16 +13,11 @@
             ]
         },
         "dev": {
-            "dependsOn": ["^build"],
             "cache": false,
             "persistent": true
         },
-        "lint": {
-            "dependsOn": ["^build"]
-        },
-        "check-types": {
-            "dependsOn": ["^build"]
-        },
+    "lint": {},
+    "check-types": {},
         "clean": {
             "cache": false
         }
